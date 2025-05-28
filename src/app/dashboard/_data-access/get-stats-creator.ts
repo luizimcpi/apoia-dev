@@ -2,7 +2,6 @@
 
 import { prisma } from "@/lib/prisma"
 import { stripe } from "@/lib/stripe"
-import { error } from "console"
 
 export async function getStats(userId: string, stripeAccountId: string) {
 
