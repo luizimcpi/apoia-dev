@@ -1,16 +1,16 @@
-
 "use client"
 
 import Link from "next/link"
 import { HandCoins, LogOut } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { MobileMenu } from "./menu-mobile"
-import { signOutAccount } from "../_actions/signout"
+import { logout } from "../_actions/logout"
+
 
 export function Header() {
 
   async function handleSignout() {
-    await signOutAccount()
+    await logout();
   }
 
   return (

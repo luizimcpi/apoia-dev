@@ -6,14 +6,13 @@ import { Menu, LogOut } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet"
 import { DialogTitle } from "@/components/ui/dialog"
-import { signOutAccount } from "../_actions/signout"
+import { logout } from "../_actions/logout"
 
 export function MobileMenu() {
   const [open, setOpen] = useState(false)
 
-
   async function handleSignout() {
-    await signOutAccount()
+    await logout();
   }
 
   return (
