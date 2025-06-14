@@ -1,7 +1,7 @@
+import { NextResponse } from 'next/server'
 import { auth } from '@/lib/auth'
 import { prisma } from '@/lib/prisma'
 import { stripe } from '@/lib/stripe'
-import { NextResponse } from 'next/server'
 
 export const POST = auth(async function POST(request) {
   if (!request.auth) {
@@ -51,6 +51,7 @@ export const POST = auth(async function POST(request) {
 
 
   } catch (err) {
+    console.log(err);
     return NextResponse.json({ error: "Falha ao criar link de configuração" }, { status: 400 })
   }
 
