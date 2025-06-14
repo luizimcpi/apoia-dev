@@ -70,3 +70,5 @@ http://localhost:3000/creator/[slug] -> ex: http://localhost:3000/creator/luizim
 - Change page names (remove Create next app)
 - Add button in home page to see available courts (list)
 ```
+
+[youtube](https://www.youtube.com/watch?v=FLMZe90y80c&t=1521s 23:10)
