@@ -38,6 +38,7 @@ This project uses [`next/font`](https://nextjs.org/docs/app/building-your-applic
 - Create account and choose 'No recurring payments' options
 - search for api keys in your stripe account and paste in .env file NEXT_PUBLIC_STRIPE_PUBLIC_KEY STRIPE_SECRET_KEY
 - search for 'connect' in stripe and configure as 'Marketplace' 
+- configure webhook - search for webhooks in your stripe account for local tests choose local option and install stripe cli.
 ```
 
 ## Learn More
@@ -61,4 +62,11 @@ http://localhost:3000/ - home page
 http://localhost:3000/dashboard - logged area - user dashboard with wallet info
 http://localhost:3000/dashboard/me - logged area - slug configuration 
 http://localhost:3000/creator/[slug] -> ex: http://localhost:3000/creator/luizimcpi
+```
+## TODO
+```
+- Login with google
+- Change home page with rent project info
+- Change page names (remove Create next app)
+- Add button in home page to see available courts (list)
 ```
