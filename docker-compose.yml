@@ -1,0 +1,10 @@
+version: '3.4'
+services:
+  databasepg:
+    container_name: databasepg
+    image: postgres
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: 123456
+    ports:
+      - "5432:5432"
